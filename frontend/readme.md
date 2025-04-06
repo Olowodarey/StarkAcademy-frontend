@@ -1,0 +1,3 @@
+a StarkNet-powered ecosystem designed to transform beginners into skilled traders through verifiable, on-chain education and competition. By combining structured learning with live trading tournaments, we eliminate the risks of scams and fake gurus prevalent in Telegram/Discord communities. this trading tournaments will be a mandatory feature which all prospective tutors will participate in, and meet the minimum rating to be a certified tutor.
+
+Built on StarkNet,stark Acedemy leverages Cairo smart contracts for transparent competition rules, and NFT badges to certify expert traders. Users progress from simulated trading to real-market competitions, learning only from vetted professionals who have proven their skills on-chain.
