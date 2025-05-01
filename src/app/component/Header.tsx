@@ -16,7 +16,7 @@ export default function Header(){
             <div className="font-bold text-2xl text-purple-500">STARK ACADEMY</div>
             <div className="hidden md:flex ml-10 space-x-8 w-110 h-10 rounded bg-#FFFFFF4D item-center">
               <a href="#" className="text-gray-300 hover:text-white">Feutures</a>
-              <a href="#" className="text-gray-300 hover:text-white">Courses</a>
+              <a href="/Courses" className="text-gray-300 hover:text-white">Courses</a>
               <a href="#" className="text-gray-300 hover:text-white">Tournaments</a>
               <a href="#" className="text-gray-300 hover:text-white">Tutors</a>
               <a href="#" className="text-gray-300 hover:text-white">FAQs</a>
