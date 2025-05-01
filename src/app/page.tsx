@@ -8,6 +8,8 @@ import Feature from './component/Feature';
 import Zero_to_expert from './component/Zero_to_expert';
 import Learn_frm_verified_tutor from './component/Learn_frm_verified_tutor';
 import HeroBanner from './component/Call_to_action';
+import Header from "./component/Header";
+
 import Footer from './component/Footer';
 
 export default function Home() {
@@ -17,6 +19,7 @@ export default function Home() {
     
     
     <div className="min-h-screen bg-black text-white">
+        <Header/>
 
 
       {/* Hero Section */}

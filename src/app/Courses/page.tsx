@@ -1,4 +1,4 @@
-mport Link from "next/link";
+import Link from "next/link";
 import CourseCard from "../component/CourseCard";
 import Footer from "../component/Footer";
 import Coursenav from "../component/coursenav";
