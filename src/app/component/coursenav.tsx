@@ -5,9 +5,9 @@ export default function Coursenav() {
   return (
     <header className="px-6 py-4 flex justify-between items-center border-b border-gray-800">
       <div className="flex items-center">
-        <Link href="/" className="font-bold text-2xl text-purple-500">Stark Academy</Link>
+        <Link href="/" className="font-bold text-2xl text-purple-500 cursor-pointer">Stark Academy</Link>
         <div className="hidden md:flex ml-10 space-x-8">
-          <Link href="/courses" className="text-gray-300 hover:text-white">Courses</Link>
+          <Link href="/Courses" className="text-gray-300 hover:text-white">Courses</Link>
           <Link href="/community-courses" className="text-gray-300 hover:text-white">Community Course</Link>
           <Link href="#" className="text-gray-300 hover:text-white">Resources</Link>
           <Link href="#" className="text-gray-300 hover:text-white">Airdrops</Link>
