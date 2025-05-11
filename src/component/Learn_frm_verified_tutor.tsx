@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image from "next/image";
 // import avater2 from '../../../public/assets/avater2.jpg';
 // import avater3 from '../../../public/assets/avater3.jpg';
 // import Rating from '../../../public/assets/Rating.jpg';
 // import Rating2 from '../../../public/assets/Rating2.jpg';
 // import badge from '../../../public/assets/badge.jpg';
-import youtube_image from '../../../public/assets/youtube_image.png';
+import youtube_image from "../../public/assets/youtube_image.png";
 
 // import verified_badge from '../../../public/assets/verified_badge.jpg';
 
@@ -16,14 +16,18 @@ export default function Learn_frm_verified_tutor() {
           Learn From <span className="text-purple-500">Verified Tutors</span>
         </h1>
         <p className="text-gray-400">
-          Our Tutors Have Proven Their Skills Through On-Chain Verification And Competitive Tournaments.
+          Our Tutors Have Proven Their Skills Through On-Chain Verification And
+          Competitive Tournaments.
         </p>
       </section>
 
       {/* Tutor Cards */}
       <section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         {[1, 2, 3].map((num) => (
-          <div key={num} className="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center text-center">
+          <div
+            key={num}
+            className="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center text-center"
+          >
             <div className="w-20 h-20 mb-4">
               <Image
                 src={`/avatar${num}.png`} // You can replace with your real images
@@ -33,12 +37,16 @@ export default function Learn_frm_verified_tutor() {
                 className="rounded-full object-cover"
               />
             </div>
-            <div className="text-sm text-purple-400 font-semibold mb-1">✅ Verified Expert</div>
+            <div className="text-sm text-purple-400 font-semibold mb-1">
+              ✅ Verified Expert
+            </div>
             <h2 className="text-2xl font-bold mb-2">Trading Expert {num}</h2>
             <p className="text-gray-400 mb-4">
-              {num === 1 ? 'Specializes in DIFI Strategies' :
-                num === 2 ? 'Specializes in Technical Analysis' :
-                'Specializes in Market Fundamentals'}
+              {num === 1
+                ? "Specializes in DIFI Strategies"
+                : num === 2
+                ? "Specializes in Technical Analysis"
+                : "Specializes in Market Fundamentals"}
             </p>
             <div className="text-yellow-400 text-sm mb-6">⭐ Top 1% Trader</div>
             <button className="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-full font-semibold">
@@ -67,7 +75,12 @@ export default function Learn_frm_verified_tutor() {
               allowFullScreen
               className="w-full h-64 rounded-xl"
             ></iframe> */}
-            <Image src={youtube_image} alt='youtube-Image' width={600} height={400}></Image>
+            <Image
+              src={youtube_image}
+              alt="youtube-Image"
+              width={600}
+              height={400}
+            ></Image>
           </div>
         </div>
 
