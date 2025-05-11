@@ -1,14 +1,14 @@
 // pages/login.tsx
-import { useState } from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Link from 'next/link';
-import { Github } from 'lucide-react';
+import { useState } from "react";
+import type { NextPage } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import { Github } from "lucide-react";
 
 const Login: NextPage = () => {
   const [formData, setFormData] = useState({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,7 +22,7 @@ const Login: NextPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login submission logic here
-    console.log('Login submitted:', formData);
+    console.log("Login submitted:", formData);
   };
 
   return (
@@ -43,21 +43,23 @@ const Login: NextPage = () => {
 
           <div className="text-center">
             <h1 className="text-2xl font-bold text-white">Login Account</h1>
-            <p className="mt-1 text-gray-400">Entre you date to create your account</p>
+            <p className="mt-1 text-gray-400">
+              Entre you date to create your account
+            </p>
           </div>
 
           <div className="mt-8 space-y-6">
             {/* OAuth Buttons */}
             <div className="grid grid-cols-2 gap-4">
-              <button
-                className="flex items-center justify-center w-full py-2 px-4 bg-purple-800 text-white rounded-md hover:bg-purple-700 transition"
-              >
-                <img src="/google-logo.svg" alt="Google" className="w-5 h-5 mr-2" />
+              <button className="flex items-center justify-center w-full py-2 px-4 bg-purple-800 text-white rounded-md hover:bg-purple-700 transition">
+                <img
+                  src="/google-logo.svg"
+                  alt="Google"
+                  className="w-5 h-5 mr-2"
+                />
                 Google
               </button>
-              <button
-                className="flex items-center justify-center w-full py-2 px-4 bg-purple-800 text-white rounded-md hover:bg-purple-700 transition"
-              >
+              <button className="flex items-center justify-center w-full py-2 px-4 bg-purple-800 text-white rounded-md hover:bg-purple-700 transition">
                 <Github className="w-5 h-5 mr-2" />
                 Git Hub
               </button>
@@ -76,7 +78,10 @@ const Login: NextPage = () => {
             {/* Login Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-white mb-1"
+                >
                   Email <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -92,7 +97,10 @@ const Login: NextPage = () => {
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-white mb-1">
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium text-white mb-1"
+                >
                   Password <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -105,7 +113,9 @@ const Login: NextPage = () => {
                   value={formData.password}
                   onChange={handleChange}
                 />
-                <p className="mt-1 text-xs text-gray-400">Must be at least 8 character Long</p>
+                <p className="mt-1 text-xs text-gray-400">
+                  Must be at least 8 character Long
+                </p>
               </div>
 
               <button
@@ -118,8 +128,11 @@ const Login: NextPage = () => {
 
             <div className="text-center mt-4">
               <p className="text-sm text-gray-400">
-                Already have an Account?{' '}
-                <Link href="/signup" className="text-purple-500 hover:text-purple-400">
+                Already have an Account?{" "}
+                <Link
+                  href="/signup"
+                  className="text-purple-500 hover:text-purple-400"
+                >
                   Sign Up
                 </Link>
               </p>
