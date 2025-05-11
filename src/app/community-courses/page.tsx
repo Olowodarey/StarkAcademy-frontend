@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Coursenav from "../component/coursenav";
-import CommunityCard from "@/app/component/CommunityCard";
-import Footer from "../component/Footer";
+import Coursenav from "@/component/coursenav";
+import CommunityCard from "@/component/CommunityCard";
+import Footer from "@/component/Footer";
 
 export default function CommunityCoursesPage() {
   const [selectedFilter, setSelectedFilter] = useState("all-courses");
@@ -245,5 +245,3 @@ export default function CommunityCoursesPage() {
     </div>
   );
 }
-
-
