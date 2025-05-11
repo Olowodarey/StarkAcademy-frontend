@@ -1,41 +1,35 @@
-"use client"
-import Head from 'next/head';
-import Image from 'next/image';
-import { useState } from 'react';
-import Hero from './component/Hero_section';
+"use client";
+import Head from "next/head";
+import Image from "next/image";
+import { useState } from "react";
+import Hero from "@/component/Hero_section";
 // import { Features } from 'tailwindcss';
-import Feature from './component/Feature';
-import Zero_to_expert from './component/Zero_to_expert';
-import Learn_frm_verified_tutor from './component/Learn_frm_verified_tutor';
-import HeroBanner from './component/Call_to_action';
-import Header from "./component/Header";
+import Feature from "@/component/Feature";
+import Zero_to_expert from "@/component/Zero_to_expert";
+import Learn_frm_verified_tutor from "@/component/Learn_frm_verified_tutor";
 
-import Footer from './component/Footer';
+import Header from "@/component/Header";
+
+import Footer from "@/component/Footer";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState('features');
+  const [activeTab, setActiveTab] = useState("features");
 
   return (
-    
-    
     <div className="min-h-screen bg-black text-white">
-        <Header/>
-
+      <Header />
 
       {/* Hero Section */}
-      <Hero/> 
-
+      <Hero />
 
       {/* Feature Section */}
-      <Feature/>
-      
+      <Feature />
 
       {/* Tabs Section */}
-      <Zero_to_expert/>
-      
+      <Zero_to_expert />
 
       {/* Pricing Section */}
-      <Learn_frm_verified_tutor/>
+      <Learn_frm_verified_tutor />
       {/* <HeroBanner/> */}
       {/* <Footer/> */}
       {/* <section className="px-6 py-16 bg-gray-900/50">
@@ -83,10 +77,13 @@ export default function Home() {
       <section className="px-6 py-16 bg-black">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-12">What Our Clients Say</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+              <div
+                key={item}
+                className="bg-gray-800 rounded-lg p-6 border border-gray-700"
+              >
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-gray-600 rounded-full mr-4"></div>
                   <div>
@@ -94,7 +91,10 @@ export default function Home() {
                     <p className="text-gray-400 text-sm">Company {item}</p>
                   </div>
                 </div>
-                <p className="text-gray-300">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <p className="text-gray-300">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
               </div>
             ))}
           </div>
@@ -105,7 +105,9 @@ export default function Home() {
       <section className="px-6 py-20 bg-gradient-to-br from-purple-900/40 to-gray-900 bg-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-gray-300 mb-8">Join thousands of users who have already transformed their workflow</p>
+          <p className="text-gray-300 mb-8">
+            Join thousands of users who have already transformed their workflow
+          </p>
           <button className="px-8 py-3 bg-purple-600 rounded-md hover:bg-purple-700 text-lg">
             Try for Free
           </button>
@@ -113,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <Footer/> 
+      <Footer />
 
       {/* <footer className="px-6 py-12 border-t border-gray-800">
         <div className="max-w-6xl mx-auto">

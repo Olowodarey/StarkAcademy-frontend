@@ -1,7 +1,7 @@
 import Link from "next/link";
-import CourseCard from "../component/CourseCard";
-import Footer from "../component/Footer";
-import Coursenav from "../component/coursenav";
+import CourseCard from "@/component/CourseCard";
+import Footer from "@/component/Footer";
+import Coursenav from "@/component/coursenav";
 
 export default function CoursesPage() {
   // Course data based on the image
