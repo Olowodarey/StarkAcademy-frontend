@@ -1,12 +1,13 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
+import { useState, useEffect } from "react";
 import Coursenav from "@/component/coursenav";
 import CommunityCard from "@/component/CommunityCard";
 import Footer from "@/component/Footer";
 
 export default function CommunityCoursesPage() {
   const [selectedFilter, setSelectedFilter] = useState("all-courses");
+  const [selectedLevel, setSelectedLevel] = useState("all");
+  const [selectedTag, setSelectedTag] = useState("all");
 
   // Community course data based on the image
   const communityCourses = [
@@ -23,6 +24,7 @@ export default function CommunityCoursesPage() {
       ratingCount: 128,
       level: "Advanced Level",
       isPopular: true,
+      tags: ["trending", "top rated"],
     },
     {
       id: 2,
@@ -37,6 +39,7 @@ export default function CommunityCoursesPage() {
       ratingCount: 87,
       level: "Advanced Level",
       isPopular: true,
+      tags: ["top rated"],
     },
     {
       id: 3,
@@ -51,6 +54,7 @@ export default function CommunityCoursesPage() {
       ratingCount: 95,
       level: "Advanced Level",
       isPopular: true,
+      tags: ["trending", "new"],
     },
     {
       id: 4,
@@ -64,6 +68,7 @@ export default function CommunityCoursesPage() {
       rating: 5,
       ratingCount: 112,
       level: "Advanced Level",
+      tags: ["trending", "top rated"],
     },
     {
       id: 5,
@@ -77,6 +82,7 @@ export default function CommunityCoursesPage() {
       rating: 4,
       ratingCount: 76,
       level: "Advanced Level",
+      tags: ["new", "top rated"],
     },
     {
       id: 6,
@@ -90,6 +96,7 @@ export default function CommunityCoursesPage() {
       rating: 5,
       ratingCount: 104,
       level: "Advanced Level",
+      tags: ["trending", "new"],
     },
     {
       id: 7,
@@ -103,6 +110,7 @@ export default function CommunityCoursesPage() {
       rating: 5,
       ratingCount: 128,
       level: "Advanced Level",
+      tags: ["trending", "top rated"],
     },
     {
       id: 8,
@@ -116,6 +124,7 @@ export default function CommunityCoursesPage() {
       rating: 5,
       ratingCount: 128,
       level: "Advanced Level",
+      tags: ["trending", "top rated"],
     },
     {
       id: 9,
@@ -129,8 +138,25 @@ export default function CommunityCoursesPage() {
       rating: 5,
       ratingCount: 128,
       level: "Advanced Level",
+      tags: ["trending", "top rated"],
+
     },
   ];
+
+  // Computing the initial filtered courses synchronously
+  const getFilteredCourses = (level: string, tag: string) => {
+    let filtered = communityCourses;
+    if (level !== "all") {
+      filtered = filtered.filter(course => course.level === level);
+    }
+    if (tag !== "all") {
+      filtered = filtered.filter(course => course.tags.includes(tag));
+    }
+    return filtered;
+  };
+
+  const filteredCourses = getFilteredCourses(selectedLevel, selectedTag);
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header with Navigation */}
@@ -161,67 +187,40 @@ export default function CommunityCoursesPage() {
             />
           </div>
           <div className="flex space-x-2">
-            <select className="bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white">
+            <select  className="bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white" aria-label="Sort by">
               <option>Newest</option>
               <option>Most Popular</option>
               <option>Top Rated</option>
             </select>
-            <select className="bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white">
-              <option>All Level</option>
-              <option>Beginner</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </select>
+
           </div>
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex border-b border-gray-800 mb-6">
-          <button
-            className={`px-4 py-2 ${
-              selectedFilter === "all-courses"
-                ? "border-b-2 border-purple-600 text-white"
-                : "text-gray-400"
-            }`}
-            onClick={() => setSelectedFilter("all-courses")}
-          >
-            All Courses
-          </button>
-          <button
-            className={`px-4 py-2 ${
-              selectedFilter === "trending"
-                ? "border-b-2 border-purple-600 text-white"
-                : "text-gray-400"
-            }`}
-            onClick={() => setSelectedFilter("trending")}
-          >
-            Trending
-          </button>
-          <button
-            className={`px-4 py-2 ${
-              selectedFilter === "most-popular"
-                ? "border-b-2 border-purple-600 text-white"
-                : "text-gray-400"
-            }`}
-            onClick={() => setSelectedFilter("most-popular")}
-          >
-            Most Popular
-          </button>
-          <button
-            className={`px-4 py-2 ${
-              selectedFilter === "new"
-                ? "border-b-2 border-purple-600 text-white"
-                : "text-gray-400"
-            }`}
-            onClick={() => setSelectedFilter("new")}
-          >
-            New
-          </button>
-        </div>
+        <div className="flex space-x-2 bg-gray-500 bg-opacity-50 p-1 rounded-full w-fit m-4">
+        {[
+        { id: "all", label: "All courses" },
+        { id: "trending", label: "Trending" },
+        { id: "top rated", label: "Top Rated" },
+        { id: "new", label: "New" },
+      ].map((filter) => (
+        <button
+          key={filter.id}
+          onClick={() => setSelectedTag(filter.id)}
+          className={`px-4 py-2 rounded-full ${
+            selectedTag === filter.id
+              ? "bg-black text-white shadow-lg"
+              : "bg-gray-400 bg-opacity-50 text-gray-200 hover:bg-opacity-70 hover:shadow"
+          }`}
+        >
+          {filter.label}
+        </button>
+      ))}
+      </div>
 
         {/* Courses Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {communityCourses.map((course) => (
+          {filteredCourses.map((course) => (
             <CommunityCard
               key={course.id}
               id={course.id}
@@ -235,6 +234,7 @@ export default function CommunityCoursesPage() {
               ratingCount={course.ratingCount}
               level={course.level}
               isPopular={course.isPopular}
+              tags={course.tags}
             />
           ))}
         </div>
