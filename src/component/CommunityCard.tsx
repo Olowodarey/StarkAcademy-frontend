@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Link from 'next/link';
 
@@ -13,6 +14,7 @@ interface CommunityCardProps {
   ratingCount: number;
   level: string;
   isPopular?: boolean;
+  tags: string[];
 }
 
 const CommunityCard: React.FC<CommunityCardProps> = ({
@@ -48,8 +50,8 @@ const CommunityCard: React.FC<CommunityCardProps> = ({
   };
 
   return (
-    <div className="bg-black border border-gray-800 rounded-lg overflow-hidden">
-      <div className="p-6">
+    <div className="bg-black border border-gray-800 rounded-lg overflow-hidden flex flex-col h-full">
+      <div className="p-6 flex flex-col h-full">
         {/* Level Badge */}
         <div className="flex justify-between items-center mb-3">
           <span className="inline-block bg-gray-800 text-gray-300 text-xs px-2 py-1 rounded">
@@ -66,7 +68,8 @@ const CommunityCard: React.FC<CommunityCardProps> = ({
         <h3 className="text-xl font-bold mb-2">{title}</h3>
 
         {/* Description */}
-        <p className="text-gray-300 text-sm mb-4">{description}</p>
+        {/* Line-clamp to ensure consistent height of the card */}
+        <p className="text-gray-300 text-sm mb-4 line-clamp-3">{description}</p>
 
         {/* Author Info */}
         <div className="flex items-center mb-4">
@@ -103,14 +106,21 @@ const CommunityCard: React.FC<CommunityCardProps> = ({
           </div>
           <span className="text-gray-400 text-sm">({ratingCount})</span>
         </div>
-      </div>
 
-      {/* View Course Button */}
-      <div className="mt-auto">
-        <Link href={`/community-courses/${id}`} className="block w-full py-3 text-center bg-purple-600 hover:bg-purple-700 transition-colors">
-          View Course
-        </Link>
+        {/* Spacer to push button to a fixed spot */}
+        <div className="flex-1"></div>
+
+        {/* View Course Button - always in the same place */}
+        <div className="flex justify-center my-2">
+          <Link
+            href={`/community-courses/${id}`}
+            className="rounded-lg w-full bg-purple-800 text-white font-semibold shadow-md  transition-colors text-center py-2 px-6"
+          >
+            View Course
+          </Link>
+        </div>
       </div>
+      {/* Removed the button from the card bottom */}
     </div>
   );
 };
