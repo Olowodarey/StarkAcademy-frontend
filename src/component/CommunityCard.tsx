@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Link from 'next/link';
 
@@ -13,6 +14,7 @@ interface CommunityCardProps {
   ratingCount: number;
   level: string;
   isPopular?: boolean;
+  tags: string[];
 }
 
 const CommunityCard: React.FC<CommunityCardProps> = ({
