@@ -15,7 +15,7 @@ const CourseCompletionModal = ({ isOpen, onClose }: CourseCompletionModalProps) 
     setIsJoinLoading(true);
     try {
       await new Promise(resolve => setTimeout(resolve, 1500));
-      window.open('https://community.starkacademy.io', '_blank');
+      window.open('https://t.me/+wG8gxRxwrzQxNTk0', '_blank');
     } finally {
       setIsJoinLoading(false);
     }
