@@ -11,7 +11,7 @@ import Learn_frm_verified_tutor from "@/component/Learn_frm_verified_tutor";
 import Header from "@/component/Header";
 
 import Footer from "@/component/Footer";
-
+import CourseCompletionButton from "@/component/CourseCompletionButton";
 export default function Home() {
   const [activeTab, setActiveTab] = useState("features");
 
@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <Hero />
-
+<CourseCompletionButton/>
       {/* Feature Section */}
       <Feature />
 

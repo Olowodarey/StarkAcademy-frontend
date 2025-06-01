@@ -35,7 +35,7 @@ const CourseCompletionModal = ({ isOpen, onClose }: CourseCompletionModalProps) 
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
-      <div className="bg-gray-800 rounded-xl shadow-2xl w-full max-w-md mx-auto">
+      <div className=" backdrop-blur-3xl  border-2  border-gray-400 bg-white/5 z-50 rounded-xl shadow-2xl w-full max-w-md mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between px-6 pt-6">
               <h2 className="text-white text-2xl font-bold">
@@ -54,9 +54,9 @@ const CourseCompletionModal = ({ isOpen, onClose }: CourseCompletionModalProps) 
         {/* Content */}
         <div className="p-6">
           <div className="text-gray-300 mb-6">
-            <p className="mb-4">
-              Academy Badges are on-chain certification representing your achievement. 
-              You can claim badges after completing your lesson and quest.
+            <img src='/assets/modal_img.png' className='w-40 h- mx-auto' />
+            <p className="mb-4 text-center pt-2">
+            CONGRATULATION ON FINISHING YOUR COURSE  TIME TO CLAIM YOUR BADGE.
             </p>
             
             {badgeClaimed && (
