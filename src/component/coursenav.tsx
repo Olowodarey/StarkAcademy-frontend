@@ -20,7 +20,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-black border-1 rounded-lg border-white text-white px-6 py-10 flex justify-between w-full items-center max-w-[85%] m-auto mt-4 ">
+    <nav className="bg-black border-1 rounded-lg border-white text-white px-6 py-4 flex justify-between w-full items-center max-w-[85%] m-auto mt-4 ">
       <div className="text-[2rem] font-bold">Stark Academy</div>
 
       {/* Desktop Menu */}
