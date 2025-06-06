@@ -102,9 +102,9 @@ export default function CoursePage() {
                   className="object-cover"
                 />
               </div>
-              <Button
-                variant="outline"
-                className="mt-4 w-full border-purple-800 bg-zinc-900 text-white hover:bg-zinc-800"
+              <Link
+                href="/profile"
+                className="mt-4 w-full border-purple-800 bg-zinc-900 text-white hover:bg-zinc-800 flex items-center justify-center rounded-md border px-4 py-2 transition"
               >
                 <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -137,7 +137,7 @@ export default function CoursePage() {
                   />
                 </svg>
                 View Profile
-              </Button>
+              </Link>
               <Button
                 variant="outline"
                 className="mt-2 w-full border-purple-800 bg-zinc-900 text-white hover:bg-zinc-800"
