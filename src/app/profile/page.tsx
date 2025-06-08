@@ -6,6 +6,7 @@ import LearningStatsCard from "./components/LearningStatsCard";
 import WalletConnectionCard from "./components/WalletConnectionCard";
 import YourCoursesCard from "./components/YourCoursesCard";
 import RecommendedCoursesCard from "./components/RecommendedCoursesCard";
+import Coursenav from "@/component/coursenav";
 
 const telegramLink = "https://t.me/your_telegram_invite"; // Reemplaza con el link real
 
@@ -34,8 +35,9 @@ export default function StudentProfile() {
   const walletConnected = false;
 
   return (
-    <div className="min-h-screen bg-black text-white p-16">
-      <h1 className="text-3xl font-bold mb-2">My Profile</h1>
+    <div className="min-h-screen bg-black text-white px-16 py-8">
+    <Coursenav />
+      <h1 className="text-3xl font-bold mb-2 mt-4">My Profile</h1>
       <p className="text-gray-400 mb-8">Manage Your Profile And Track Your Learning Progress</p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex flex-col gap-8">
@@ -48,6 +50,6 @@ export default function StudentProfile() {
           <RecommendedCoursesCard courses={recommended} />
         </div>
       </div>
-    </div>
+        </div>
   );
 } 
