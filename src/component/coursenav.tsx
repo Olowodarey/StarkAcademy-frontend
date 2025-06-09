@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -13,14 +12,15 @@ import React from "react";
 import resourceicon from "../../public/assets/resourceicon.svg";
 import tradingicon from "../../public/assets/tradingIcon.svg";
 import airdropicon from "../../public/assets/airdropIcon.svg";
-
+import { useRouter } from "next/navigation";
 const Navbar = () => {
+  const router = useRouter();
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-black border-1 rounded-lg border-white text-white px-6 py-4 flex justify-between w-full items-center max-w-[85%] m-auto mt-4 ">
+    <nav className="bg-black border-1 rounded-lg border-white text-white px-6 py-4 flex justify-between w-full items-center m-auto mt-4 ">
       <div className="text-[2rem] font-bold">Stark Academy</div>
 
       {/* Desktop Menu */}
@@ -100,7 +100,10 @@ const Navbar = () => {
         </div>
         <Bell className="cursor-pointer text-gray-400 hover:text-white" />
         <Moon className="cursor-pointer" />
-        <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center cursor-pointer">
+        <div
+          className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center cursor-pointer"
+          onClick={() => router.push("/profile")}
+        >
           PH
         </div>
       </div>
@@ -187,7 +190,10 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <Bell className="cursor-pointer text-gray-400 hover:text-white" />
             <Moon />
-            <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+            <div
+              className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center cursor-pointer"
+              onClick={() => router.push("/profile")}
+            >
               PH
             </div>
           </div>
