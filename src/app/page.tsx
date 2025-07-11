@@ -2,7 +2,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import Hero from "@/component/Hero_section";
+import Hero from "@/component/Homepage/Hero_section";
 // import { Features } from 'tailwindcss';
 import Feature from "@/component/Feature";
 import Zero_to_expert from "@/component/Zero_to_expert";
@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <Hero />
-<CourseCompletionButton/>
+{/* <CourseCompletionButton/> */}
       {/* Feature Section */}
       <Feature />
 
