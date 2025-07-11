@@ -4,14 +4,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star, Shield, Trophy, Award, Users, BookOpen, Gift } from "lucide-react";
 import { motion } from "framer-motion";
 
-const fadeInUp = {
+import { Variants } from 'framer-motion';
+
+const fadeInUp: Variants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: "easeOut"
+      ease: [0.16, 1, 0.3, 1] as const  // Type assertion for the ease array
     }
   }
 };
