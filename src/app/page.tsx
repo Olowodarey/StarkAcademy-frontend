@@ -7,25 +7,24 @@ import Header from "@/component/Header";
 import Footer from "@/component/Footer";
 import Who_for from "@/component/Homepage/Who_for";
 import Why_starknet from "@/component/Homepage/Why_starknet";
-import Cta from "@/component/Homepage/Cta";
-export default function Home() {
-  const [activeTab, setActiveTab] = useState("features");
 
+export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
 
       <Hero />
 
-      <HowItWorks />
+      <Feature />
 
       <Why_starknet />
 
-      <Feature />
-
-      <Cta />
-
       <Who_for />
+
+      <HowItWorks />
+
+      {/* <Cta /> */}
+
       <Footer />
     </div>
   );
