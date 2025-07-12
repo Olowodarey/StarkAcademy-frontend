@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 
-// Create a simple Skeleton component if the import fails
+
 type SkeletonProps = {
   className?: string;
 };
@@ -119,19 +119,11 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative px-6 py-20 md:py-32 overflow-hidden bg-gradient-to-b from-gray-900 to-black min-h-screen flex items-center">
-      {/* Decorative elements */}
-      <motion.div
-        className="absolute inset-0 opacity-20"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.2 }}
-        transition={{ duration: 1 }}
-      >
-        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      </motion.div>
+    <section className="relative z-10 py-32 overflow-hidden bg-gradient-to-bflex items-center">
+     
 
       <motion.div
-        className="relative z-10 max-w-7xl mx-auto w-full"
+        className="relative z-10 max-w-7xl mx-auto w-full px-6"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -141,18 +133,23 @@ export default function Hero() {
             <FaShieldAlt className="mr-2" /> StarkNet-Powered Education
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
-            Master Crypto Trading
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300">
-              On-Chain
-            </span>
-          </h1>
+          <div className="mb-8 max-w-4xl mx-auto">
+            <div className="inline-block px-4 py-2 rounded-full bg-purple-900/30 border border-purple-500/30 text-purple-300 text-sm font-medium mb-6">
+              The Problem & Our Mission
+            </div>
+            
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
+              Web3 Education Is Broken.
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300">
+                We're Fixing It.
+              </span>
+            </h1>
 
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-            Transform from beginner to expert through verifiable education and
-            live trading tournaments, all powered by StarkNet's zero-knowledge
-            technology.
-          </p>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+              Most crypto trading education is overpriced, centralized, and impossible to verify. Courses are outdated, instructors are unverified, and there's no way to prove what you've learned. 
+              <span className="text-purple-300 font-medium">Stark Academy changes that.</span> We combine structured learning, skill-based competition, and on-chain credentialing to give everyone a fair shot at mastering Web3.
+            </p>
+          </div>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
             <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:from-purple-700 hover:to-pink-700 font-medium text-lg transition-all transform hover:scale-105">

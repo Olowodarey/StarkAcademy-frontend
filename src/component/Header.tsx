@@ -22,7 +22,7 @@ export default function Header() {
               Features
             </Link>
             <Link
-              href="#"
+              href="/Courses"
               className="text-zinc-600 hover:text-purple-500 hover:rounded-2xl   font-bold transition-colors"
             >
               Courses
