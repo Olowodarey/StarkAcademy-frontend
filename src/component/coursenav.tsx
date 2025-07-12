@@ -13,6 +13,7 @@ import resourceicon from "../../public/assets/resourceicon.svg";
 import tradingicon from "../../public/assets/tradingIcon.svg";
 import airdropicon from "../../public/assets/airdropIcon.svg";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 const Navbar = () => {
   const router = useRouter();
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black border-1 rounded-lg border-white text-white px-6 py-4 flex justify-between w-full items-center m-auto mt-4 ">
-      <div className="text-[2rem] font-bold">Stark Academy</div>
+      <Link href="/" className="text-[2rem] font-bold">Stark Academy</Link>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-6">
