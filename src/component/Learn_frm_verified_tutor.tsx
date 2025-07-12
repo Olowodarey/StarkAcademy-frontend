@@ -10,7 +10,8 @@ import youtube_image from "../../public/assets/youtube_image.png";
 
 export default function Learn_frm_verified_tutor() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white py-12 px-4">
+    <main className="relative min-h-screen bg-gradient-to-b from-gray-900 to-black text-white py-20 px-4 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-transparent" />
       <section className="text-center space-y-4">
         <h1 className="text-4xl font-bold">
           Learn From <span className="text-purple-500">Verified Tutors</span>
@@ -26,7 +27,8 @@ export default function Learn_frm_verified_tutor() {
         {[1, 2, 3].map((num) => (
           <div
             key={num}
-            className="bg-gray-800 rounded-2xl p-6 shadow-lg flex flex-col items-center text-center"
+          >
+            <div className="relative z-10 bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-xl border border-gray-700/30 rounded-2xl p-6 shadow-lg flex flex-col items-center text-center hover:border-purple-500/30 hover:shadow-purple-500/10 transition-all duration-300"
           >
             <div className="w-20 h-20 mb-4">
               <Image
@@ -53,6 +55,7 @@ export default function Learn_frm_verified_tutor() {
               View Profile
             </button>
           </div>
+          </div>
         ))}
       </section>
 
@@ -64,7 +67,7 @@ export default function Learn_frm_verified_tutor() {
       </div>
 
       {/* Upload Section */}
-      <section className="mt-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <section className="relative z-10 mt-20 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 px-6">
         {/* YouTube Embed */}
         <div className="w-full">
           <div className="aspect-w-16 aspect-h-9">
