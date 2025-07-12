@@ -1,12 +1,12 @@
-import React from 'react'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Star, Shield, Trophy, Award, Users, BookOpen, Gift } from "lucide-react"
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+import { Users } from "lucide-react";
 
 const who_for = () => {
   return (
-    <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
+    <div className="relative z-10 max-w-7xl mx-auto px-6 py-5">
       <div className="text-center space-y-6 mb-20">
         <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-500/30 rounded-full px-6 py-2">
           <Users className="w-4 h-4 text-blue-400" />
@@ -19,8 +19,8 @@ const who_for = () => {
           </span>
         </h2>
         <p className="text-gray-300 text-xl max-w-3xl mx-auto leading-relaxed">
-          Whether you're taking your first steps into crypto or building your Web3 career, Stark Academy provides the
-          perfect path for your journey.
+          Whether you're taking your first steps into crypto or building your
+          Web3 career, Stark Academy provides the perfect path for your journey.
         </p>
       </div>
 
@@ -33,18 +33,26 @@ const who_for = () => {
               <div className="flex items-center space-x-4">
                 <div className="text-6xl">🕧</div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">Crypto Beginners</h3>
-                  <p className="text-green-400 font-medium">Start Your Journey Safely</p>
+                  <h3 className="text-2xl font-bold text-white">
+                    Crypto Beginners
+                  </h3>
+                  <p className="text-green-400 font-medium">
+                    Start Your Journey Safely
+                  </p>
                 </div>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Learn trading without risking your capital. Our simulated environments let you practice with real
-                market data while keeping your money safe. Master the fundamentals before you invest a single dollar.
+                Learn trading without risking your capital. Our simulated
+                environments let you practice with real market data while
+                keeping your money safe. Master the fundamentals before you
+                invest a single dollar.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span className="text-gray-300">Risk-free learning environment</span>
+                  <span className="text-gray-300">
+                    Risk-free learning environment
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
@@ -52,7 +60,9 @@ const who_for = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span className="text-gray-300">Real market data practice</span>
+                  <span className="text-gray-300">
+                    Real market data practice
+                  </span>
                 </div>
               </div>
               <Button className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white">
@@ -70,18 +80,25 @@ const who_for = () => {
               <div className="flex items-center space-x-4">
                 <div className="text-6xl">📊</div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">Aspiring Traders</h3>
-                  <p className="text-blue-400 font-medium">Build Your Reputation</p>
+                  <h3 className="text-2xl font-bold text-white">
+                    Aspiring Traders
+                  </h3>
+                  <p className="text-blue-400 font-medium">
+                    Build Your Reputation
+                  </p>
                 </div>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Build a public portfolio and prove your skill to the world. Compete in tournaments, climb
-                leaderboards, and create an on-chain track record that speaks for itself.
+                Build a public portfolio and prove your skill to the world.
+                Compete in tournaments, climb leaderboards, and create an
+                on-chain track record that speaks for itself.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  <span className="text-gray-300">Public performance tracking</span>
+                  <span className="text-gray-300">
+                    Public performance tracking
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
@@ -89,7 +106,9 @@ const who_for = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  <span className="text-gray-300">Verifiable skill certificates</span>
+                  <span className="text-gray-300">
+                    Verifiable skill certificates
+                  </span>
                 </div>
               </div>
               <Button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white">
@@ -108,21 +127,28 @@ const who_for = () => {
                 <div className="text-6xl">🎓</div>
                 <div>
                   <h3 className="text-2xl font-bold text-white">Educators</h3>
-                  <p className="text-purple-400 font-medium">Monetize Your Knowledge</p>
+                  <p className="text-purple-400 font-medium">
+                    Monetize Your Knowledge
+                  </p>
                 </div>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Get certified by performance and earn from your knowledge. Transform your trading expertise into a
-                sustainable income stream by teaching the next generation of traders.
+                Get certified by performance and earn from your knowledge.
+                Transform your trading expertise into a sustainable income
+                stream by teaching the next generation of traders.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                  <span className="text-gray-300">Performance-based certification</span>
+                  <span className="text-gray-300">
+                    Performance-based certification
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                  <span className="text-gray-300">Passive income opportunities</span>
+                  <span className="text-gray-300">
+                    Passive income opportunities
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
@@ -145,21 +171,28 @@ const who_for = () => {
                 <div className="text-6xl">🌍</div>
                 <div>
                   <h3 className="text-2xl font-bold text-white">Web3 Users</h3>
-                  <p className="text-orange-400 font-medium">Expand Your Identity</p>
+                  <p className="text-orange-400 font-medium">
+                    Expand Your Identity
+                  </p>
                 </div>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Explore StarkNet apps and build your on-chain identity. Add trading credentials to your Web3 profile
-                and unlock new opportunities in the decentralized economy.
+                Explore StarkNet apps and build your on-chain identity. Add
+                trading credentials to your Web3 profile and unlock new
+                opportunities in the decentralized economy.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-                  <span className="text-gray-300">StarkNet ecosystem access</span>
+                  <span className="text-gray-300">
+                    StarkNet ecosystem access
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-                  <span className="text-gray-300">On-chain identity building</span>
+                  <span className="text-gray-300">
+                    On-chain identity building
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
@@ -174,7 +207,7 @@ const who_for = () => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default who_for;
