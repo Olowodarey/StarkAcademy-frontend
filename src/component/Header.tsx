@@ -5,43 +5,47 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-black text-white">
-      <nav className=" px-4 sm:px-6 py-5">
+    <div className="relative bg-gradient-to-b from-gray-900 via-gray-900 to-transparent text-white">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
+        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center opacity-5"></div>
+      </div>
+      <nav className="relative z-10 px-4 sm:px-6 py-5">
         <div className="flex items-center justify-between p-5">
           {/* Logo */}
-          <div className="font-bold text-2xl text-purple-500">
+          <div className="font-bold text-2xl text-purple-500 cursor-pointer">
             STARK ACADEMY
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 bg-amber-50 p-5 rounded-2xl">
+          <div className="hidden md:flex items-center space-x-8 bg-gray-900/80 backdrop-blur-md p-5 rounded-2xl border border-gray-700/50">
             <Link
               href="#"
-              className="text-zinc-600 hover:text-purple-500 hover:rounded-2xl   font-bold transition-colors"
+              className="text-gray-300 hover:text-purple-400 hover:rounded-2xl font-bold transition-colors cursor-pointer"
             >
               Features
             </Link>
             <Link
               href="/Courses"
-              className="text-zinc-600 hover:text-purple-500 hover:rounded-2xl   font-bold transition-colors"
+              className="text-gray-300 hover:text-purple-400 hover:rounded-2xl font-bold transition-colors cursor-pointer"
             >
               Courses
             </Link>
             <Link
               href="#"
-              className="text-zinc-600 hover:text-purple-500 hover:rounded-2xl   font-bold transition-colors"
+              className="text-gray-300 hover:text-purple-400 hover:rounded-2xl font-bold transition-colors cursor-pointer"
             >
               Tournaments
             </Link>
             <Link
               href="#"
-              className="text-zinc-600 hover:text-purple-500 hover:rounded-2xl   font-bold transition-colors"
+              className="text-gray-300 hover:text-purple-400 hover:rounded-2xl font-bold transition-colors cursor-pointer"
             >
               Tutors
             </Link>
             <Link
               href="#"
-              className="text-zinc-600 hover:text-purple-500 hover:rounded-2xl   font-bold transition-colors"
+              className="text-gray-300 hover:text-purple-400 hover:rounded-2xl font-bold transition-colors cursor-pointer"
             >
               FAQs
             </Link>
@@ -49,7 +53,9 @@ export default function Header() {
 
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="px-6 py-3 bg-amber-50 rounded-2xl hover:bg-purple-700 transition-colors text-zinc-600 font-bold hover:text-white">
+            <button
+              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-2xl transition-colors text-white font-bold cursor-pointer"
+            >
               Connect Wallet
             </button>
           </div>
@@ -58,7 +64,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-lg bg-amber-50 text-zinc-600 hover:bg-zinc-200 focus:outline-none"
+              className="p-2 rounded-lg bg-gray-800/80 backdrop-blur-md text-gray-300 hover:bg-gray-700/80 focus:outline-none border border-gray-700/50 cursor-pointer"
             >
               <svg
                 className="h-6 w-6"
@@ -88,10 +94,10 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 p-4 bg-amber-50 rounded-2xl space-y-3">
+          <div className="md:hidden mt-4 p-4 bg-gray-900/90 backdrop-blur-md rounded-2xl border border-gray-700/50 space-y-3">
             <Link
               href="#"
-              className="block text-zinc-600 hover:text-zinc-900 hover:bg-zinc-200 rounded-2xl p-2 font-bold transition-colors"
+              className="block text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-2xl p-4 font-bold transition-colors cursor-pointer"
               onClick={() => setIsMenuOpen(false)}
             >
               Features
@@ -126,7 +132,7 @@ export default function Header() {
             </Link>
             <div className="pt-2">
               <button
-                className="w-full py-3 bg-purple-700 text-white rounded-2xl font-bold hover:bg-purple-800 transition-colors"
+                className="block w-full text-center py-3 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-2xl transition-colors mt-4 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Connect Wallet
