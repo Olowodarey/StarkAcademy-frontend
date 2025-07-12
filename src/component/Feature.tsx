@@ -63,8 +63,12 @@ export default function Feature() {
   ];
 
   return (
-    <section id="features" className="relative overflow-hidden py-20 bg-gradient-to-b from-purple-900/80 to-gray-900">
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent" />
+
+
+
+    <section id="features" className="relative overflow-hidden py-20">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 to-transparent" />
+
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div 
@@ -92,7 +96,8 @@ export default function Feature() {
         >
           {features.map((feature, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <Card className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-gray-700/30 hover:border-purple-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/10 h-full">
+
+              <Card className="group bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/10 h-full">
                 <CardContent className="p-6 space-y-4 h-full flex flex-col">
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     {feature.icon}
