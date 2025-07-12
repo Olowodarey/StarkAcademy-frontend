@@ -1,7 +1,5 @@
-import Image from "next/image";
-import Icon_container from "../../public/assets/Icon_container.png";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Shield, Trophy, Award, Users, BookOpen, Gift } from "lucide-react";
+import { Shield, Trophy, Award, Users, BookOpen, Gift } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { Variants } from 'framer-motion';
@@ -57,8 +55,8 @@ export default function Feature() {
     },
     {
       icon: <Gift className="w-6 h-6 text-white" />,
-      title: "Airdrop Opportunities",
-      description: "Get exclusive access to token airdrops and rewards for active participation in the Stark Academy ecosystem."
+      title: "Airdrop Mastery",
+      description: "Learn how to identify and participate in top airdrop projects, whether you're a developer or trader in the Web3 space."
     }
   ];
 
