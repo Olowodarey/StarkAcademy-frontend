@@ -64,13 +64,13 @@ export default function Feature() {
 
 
 
-    <section id="features" className="relative overflow-hidden py-20">
+    <section id="features" className="relative overflow-hidden py-5">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 to-transparent" />
 
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div 
-          className="text-center space-y-4 mb-16"
+          className="text-center space-y-4 mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -103,7 +103,7 @@ export default function Feature() {
                   <h3 className="text-xl font-bold text-white">{feature.title}</h3>
                   <p className="text-gray-300 flex-grow">{feature.description}</p>
                   <div className="pt-2">
-                    <button className="text-purple-400 hover:text-purple-300 text-sm font-medium flex items-center group-hover:translate-x-1 transition-transform duration-300">
+                    <button className="text-purple-400 hover:text-purple-300 text-sm font-medium flex items-center group-hover:translate-x-1 transition-transform duration-300 cursor-pointer">
                       Learn more
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
