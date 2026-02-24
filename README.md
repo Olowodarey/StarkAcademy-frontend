@@ -40,20 +40,9 @@ InsightArena/
 | Frontend           | React / Next.js                    |
 | Backend            | NestJS (Node.js)                   |
 | Package Manager    | pnpm (Backend)                     |
-| Wallet Integration | Freighter                          |
-| Asset Model        | XLM or custom Stellar-issued token |
+| Asset Model        | XLM (Stellar)                      |
 
 ---
-
-## Smart Contract Architecture
-
-- **Market Contract** – Handles market creation, prediction submissions, and deadline enforcement
-- **Resolution Contract** – Verifies outcomes and distributes rewards
-- **Leaderboard Contract** – Tracks user scores, rankings, and competition cycles
-- **Reward Logic** – Manages token incentives and bonus distributions
-
----
-
 ## Vision
 
 InsightArena aims to redefine decentralized prediction markets by combining transparent smart contract infrastructure with competitive gamification. Built exclusively on Stellar's fast and low-cost network, the platform enables global users to participate, compete, and earn in a secure and trust-minimized environment.
