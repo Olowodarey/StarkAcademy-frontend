@@ -14,7 +14,7 @@ By combining prediction markets with gamified competition, InsightArena creates 
 InsightArena/
 ├── frontend/    # React / Next.js web application
 ├── contract/    # Soroban smart contracts (Rust)
-└── backend/     # Backend services and APIs
+└── backend/     # NestJS backend services and APIs (pnpm)
 ```
 
 ---
@@ -38,6 +38,8 @@ InsightArena/
 | Blockchain         | Stellar Network                    |
 | Smart Contracts    | Soroban (Rust)                     |
 | Frontend           | React / Next.js                    |
+| Backend            | NestJS (Node.js)                   |
+| Package Manager    | pnpm (Backend)                     |
 | Wallet Integration | Freighter                          |
 | Asset Model        | XLM or custom Stellar-issued token |
 
@@ -48,7 +50,7 @@ InsightArena/
 - **Market Contract** – Handles market creation, prediction submissions, and deadline enforcement
 - **Resolution Contract** – Verifies outcomes and distributes rewards
 - **Leaderboard Contract** – Tracks user scores, rankings, and competition cycles
-- **Reward Logic (Optional)** – Manages token incentives and bonus distributions
+- **Reward Logic** – Manages token incentives and bonus distributions
 
 ---
 
