@@ -1,0 +1,59 @@
+# InsightArena
+
+InsightArena is a decentralized prediction market platform built on the Stellar network that allows users to participate in both standard prediction events and competitive leaderboard-based challenges. Users can submit predictions on real-world outcomes such as sports results, crypto prices, or other measurable events, all recorded transparently through smart contracts.
+
+In addition to regular markets, InsightArena introduces ranked competitions where participants earn points based on performance and compete on public leaderboards for top rewards.
+
+By combining prediction markets with gamified competition, InsightArena creates an engaging, transparent, and trust-minimized ecosystem where users can test their insights, compete globally, and earn based on accuracy.
+
+---
+
+## Repository Structure
+
+```
+InsightArena/
+├── frontend/    # React / Next.js web application
+├── contract/    # Soroban smart contracts (Rust)
+└── backend/     # Backend services and APIs
+```
+
+---
+
+## Core Features
+
+- Decentralized prediction markets
+- On-chain escrow and automated payouts
+- Transparent leaderboard rankings
+- Seasonal competitions with reward pools
+- Low transaction fees via Stellar
+- Fast settlement and finality
+- Built with Soroban smart contracts
+
+---
+
+## Technology Stack
+
+| Layer              | Technology                         |
+| ------------------ | ---------------------------------- |
+| Blockchain         | Stellar Network                    |
+| Smart Contracts    | Soroban (Rust)                     |
+| Frontend           | React / Next.js                    |
+| Wallet Integration | Freighter                          |
+| Asset Model        | XLM or custom Stellar-issued token |
+
+---
+
+## Smart Contract Architecture
+
+- **Market Contract** – Handles market creation, prediction submissions, and deadline enforcement
+- **Resolution Contract** – Verifies outcomes and distributes rewards
+- **Leaderboard Contract** – Tracks user scores, rankings, and competition cycles
+- **Reward Logic (Optional)** – Manages token incentives and bonus distributions
+
+---
+
+## Vision
+
+InsightArena aims to redefine decentralized prediction markets by combining transparent smart contract infrastructure with competitive gamification. Built exclusively on Stellar's fast and low-cost network, the platform enables global users to participate, compete, and earn in a secure and trust-minimized environment.
+
+InsightArena is not just about predicting outcomes — it's about proving insight.
