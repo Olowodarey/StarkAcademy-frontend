@@ -2,9 +2,9 @@
 
 InsightArena is a decentralized prediction market platform built on the Stellar network that allows users to participate in both standard prediction events and competitive leaderboard-based challenges. Users can submit predictions on real-world outcomes such as sports results, crypto prices, or other measurable events, all recorded transparently through smart contracts.
 
-In addition to regular markets, InsightArena introduces ranked competitions where participants earn points based on performance and compete on public leaderboards for top rewards.
+In addition to regular markets, **any user can create their own custom prediction events and leaderboards**. Creators can open these events to the public or make them private competitions, generating special invite codes that friends can use to join in. Whether public or private, participants earn points based on performance and compete for top rewards.
 
-By combining prediction markets with gamified competition, InsightArena creates an engaging, transparent, and trust-minimized ecosystem where users can test their insights, compete globally, and earn based on accuracy.
+By combining prediction markets with gamified competition, InsightArena creates an engaging, transparent, and trust-minimized ecosystem where users can test their insights, host private challenges, compete globally, and earn based on accuracy.
 
 ---
 
