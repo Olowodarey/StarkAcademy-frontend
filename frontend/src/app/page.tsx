@@ -3,7 +3,7 @@ import React from "react";
 import Header from "@/component/Header";
 import Footer from "@/component/Footer";
 import HeroSection from "@/component/Homepage/HeroSection";
-import MatchesSection from "@/component/Homepage/MatchesSection";
+
 import HowItWorksSection from "@/component/Homepage/HowItWorksSection";
 
 export default function Home() {
@@ -58,7 +58,7 @@ export default function Home() {
       <div className="relative z-10">
         <Header />
         <HeroSection />
-        <MatchesSection />
+  
         <HowItWorksSection />
         <Footer />
       </div>
