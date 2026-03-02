@@ -22,16 +22,17 @@ export default function HeroSection() {
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Provably Fair.
+                Decentralized.
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
-                  Fully On-Chain.
+                  Powered by Stellar.
                 </span>
               </h1>
 
               <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0">
-                A transparent, on-chain platform for giveaways and skill-based
-                prediction competitions with verifiable results.
+                A highly secure, transparent prediction market where you can
+                test your insights, host private challenges, and earn rewards
+                based on accuracy.
               </p>
             </div>
 
