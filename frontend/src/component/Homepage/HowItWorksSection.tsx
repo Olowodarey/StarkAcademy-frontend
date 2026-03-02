@@ -33,14 +33,14 @@ export default function HowItWorksSection() {
           {/* Left side - Title and illustration */}
           <div className="text-center lg:text-left">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight">
-              How It{" "}
+              Build Your{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
-                Works
+                Insight
               </span>
             </h2>
             <p className="text-xl text-gray-300 mb-12 max-w-lg mx-auto lg:mx-0">
-              TrueCall facilitates seamless blockchain-based predictions,
-              enhancing transparency in the gaming process.
+              InsightArena redefines prediction markets by fusing smart-contract
+              infrastructure with gamified competition on the Stellar network.
             </p>
           </div>
 
