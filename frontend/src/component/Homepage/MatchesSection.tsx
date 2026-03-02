@@ -185,13 +185,14 @@ export default function MatchesSection() {
           Live from API
         </span>
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-          Upcoming{" "}
+          Global{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-yellow-400">
-            Matches
+            Markets
           </span>
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto text-lg">
-          Pick a match, predict the result, and earn points on-chain.
+          Predict the outcome of major events and earn rewards based on your
+          insights.
         </p>
       </div>
 
