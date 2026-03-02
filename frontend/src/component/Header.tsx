@@ -9,7 +9,7 @@ export default function Header() {
         <nav className="flex items-center justify-between">
           <div>
             <Link href="/" className="text-white font-bold text-xl">
-              TrueCall
+              InsightArena
             </Link>
           </div>
           <div>
