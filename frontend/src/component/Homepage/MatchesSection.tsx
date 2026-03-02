@@ -247,7 +247,8 @@ export default function MatchesSection() {
               </svg>
             </div>
             <p className="text-gray-400">
-              No upcoming matches found. Sync the API from the backend first.
+              No upcoming markets found. Connect the Soroban nodes or sync the
+              backend.
             </p>
           </div>
         )}
