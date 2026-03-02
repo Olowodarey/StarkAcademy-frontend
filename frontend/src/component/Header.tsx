@@ -15,19 +15,19 @@ export default function Header() {
           <div>
             <div className="hidden md:flex items-center space-x-6">
               <Link
-                href="/markets"
+                href="/"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Global Markets
               </Link>
               <Link
-                href="/create-event"
+                href="/"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Create Event
               </Link>
               <Link
-                href="/profile"
+                href="/"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Profile
