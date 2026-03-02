@@ -2,27 +2,27 @@ export default function HowItWorksSection() {
   const steps = [
     {
       number: "01",
-      title: "Create an Event",
+      title: "Discover or Create",
       description:
-        "Creators set up prediction or giveaway events by choosing a topic, defining the question, and selecting at least 3 possible outcomes. Optional rewards can be locked upfront.",
+        "Join public prediction markets on real-world outcomes (sports, crypto) or create your own custom private challenges to invite friends using unique codes.",
     },
     {
       number: "02",
-      title: "Play for Free",
+      title: "Predict & Compete",
       description:
-        "Users join events and submit predictions with zero entry fees. All predictions are recorded on-chain with timestamps for fairness.",
+        "Submit predictions seamlessly with fraction-of-a-cent fees and instant finality powered natively by the Stellar network.",
     },
     {
       number: "03",
-      title: "Results Are Verified",
+      title: "Results Verified on Soroban",
       description:
-        "When the event ends: Numeric results are resolved using trusted oracles. For major events, the creator submits the correct outcome and an admin only verifies that submission. No manual winner selection. No disputes.",
+        "Once an event concludes, outcomes are resolved securely and transparently. Payouts and points are distributed immediately through automated Soroban smart contracts.",
     },
     {
       number: "04",
-      title: "Climb the Leaderboard",
+      title: "Climb the Leaderboards",
       description:
-        "Scores update automatically, rewards are distributed, NFT badges are minted, and users climb event and monthly leaderboards.",
+        "Gamify your insights! Earn points based on accuracy to rank up on global and private leaderboards for special seasonal rewards.",
     },
   ];
 
