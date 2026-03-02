@@ -36,10 +36,10 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="col-span-2 lg:col-span-1 space-y-4 text-center lg:text-left">
-            <h3 className="text-white font-bold text-xl">TrueCall</h3>
+            <h3 className="text-white font-bold text-xl">InsightArena</h3>
             <p className="text-gray-400 text-sm max-w-xs mx-auto lg:mx-0">
-              The premier verifiable blockchain gaming platform built on Stacks,
-              offering provably fair gaming experiences.
+              The premier decentralized prediction market built on Stellar,
+              offering provably fair gaming and competitive leaderboards.
             </p>
             <div className="flex space-x-4 justify-center lg:justify-start">
               <a
@@ -104,7 +104,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 TrueCall. All rights reserved. Built on Stacks Blockchain.
+            © 2026 InsightArena. All rights reserved. Built on Stellar.
           </p>
         </div>
       </div>
