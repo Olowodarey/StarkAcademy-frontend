@@ -48,7 +48,7 @@ export default function UnifiedBackground({
             waveAmplitude={0.4}
             particleSize={variant === "hero" ? 1.5 : 1.2}
             lerpSpeed={0.05}
-            color="#f97316"
+            color="#3b82f6"
             autoAnimate
             particleVariance={1}
             rotationSpeed={0}
